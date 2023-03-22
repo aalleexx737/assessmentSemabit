@@ -1,0 +1,230 @@
+$color1: #414141;
+$color2: #ff730d;
+
+* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: $color1;
+    color: white;
+    font-weight: 400;
+}
+
+.app {
+
+    // End Screen
+    .result {
+        width: 300px;
+        margin: 40px auto;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+
+        .header {
+            background-color: $color1;
+            border-radius: 10px 10px 0 0;
+            color: white;
+            width: 100%;
+            text-align: center;
+
+            h2 {
+                font-size: 20px;
+                font-weight: 400;
+            }
+        }
+
+        .list {
+            background-color: $color2;
+            width: 100%;
+            border-radius: 0 0 10px 10px;
+            color: white;
+
+            .listItem {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 7px 15px;
+                border-top: 1px solid $color1;
+            }
+        }
+    }
+
+    // Screen while game is running
+    .gameScreen {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        // align-items: center;
+
+        .red {
+            background-color: red;
+        }
+
+        .blue {
+            background-color: blue;
+        }
+
+        .green {
+            background-color: green;
+        }
+
+        .orange {
+            background-color: orange;
+        }
+
+        .yellow {
+            background-color: yellow;
+        }
+
+        .brown {
+            background-color: brown;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            font-size: 32px;
+            text-align: center;
+
+            .name {
+                color: $color2;
+            }
+        }
+
+        .others {
+            display: flex;
+            flex-direction: row;
+            // align-items: center;
+            justify-content: space-evenly;
+            text-align: center;
+
+            .other {
+
+                .openCardsOther {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 10px;
+                    align-items: center;
+                    justify-content: center;
+
+                    div {
+                        width: 50px;
+                        height: 100px;
+                        border-radius: 10px;
+                        box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+                    }
+                }
+            }
+        }
+
+        .ownCards {
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+
+            .cards {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-evenly;
+
+                div {
+                    width: 100px;
+                    height: 200px;
+                    border-radius: 10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+                }
+
+            }
+        }
+
+
+
+        .dice {
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            div {
+                border-radius: 10px;
+                width: 100px;
+                height: 100px;
+                box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.35);
+            }
+        }
+    }
+
+    button {
+
+        margin: auto;
+        margin-top: 100px;
+        width: 100px;
+        height: 50px;
+        background-color: white;
+        border: 1px solid black;
+        color: black;
+        border-radius: 5px;
+        font-size: 14px;
+
+        &:hover {
+            background-color: $color1;
+            cursor: pointer;
+            color: white;
+            border: 1px solid white
+        }
+    }
+
+    // Initial page
+    .start {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-weight: 400;
+
+        h1 {
+            font-size: 100px;
+            color: $color2
+        }
+
+        h2,
+        h4 {
+            font-weight: 400;
+        }
+
+        h2 {
+            color: $color2;
+        }
+
+        .settings {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            gap: 10px;
+            align-items: center;
+        }
+
+        p {
+            padding: 20px;
+        }
+    }
+}
